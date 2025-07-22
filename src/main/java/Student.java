@@ -9,8 +9,37 @@ public class Student {
     //you must add validation checks for instance variables
     private String name;
     private int age;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", studentId='" + studentId + '\'' +
+                ", courses=" + courses +
+                '}';
+    }
+
     private String studentId;
     private List<String> courses;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public List<String> getCourses() {
+        return courses;
+    }
+
+
 
    public Student(String name,int age,String studentId) {
        super(); //is used to call the parent class constructor. its calling constructor of Object class
@@ -85,4 +114,3 @@ public class Student {
 
 
     }
-
