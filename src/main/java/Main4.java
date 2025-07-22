@@ -107,6 +107,7 @@ studentFound.printStudentInfo();
 
 
     private static void exit() {
+        System.out.println("Goodbye!!!!");
         System.exit(0);
     }
 
@@ -121,6 +122,7 @@ studentFound.printStudentInfo();
         };*/
             Collections.sort(studentList, studentNameComparator);
             System.out.println(studentList);
+            printAllStudentData();
         }
 
         public static Student findStudentById (String studentId){
